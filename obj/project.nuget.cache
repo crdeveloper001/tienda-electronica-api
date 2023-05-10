@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "nloccy8g9vo2ZwUEAN984/zKMDgYzX0zh9wKpLwvfQ9qze/sQ8c0mvYKS+SU8Y4KVZwip6SfFqkaa6e1akkfLg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\004007659\\Desktop\\PROYECTOS PERSONALES\\Tienda Electronica v1\\tienda-electronica-api-server\\tienda-electronica-api-server.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\004007659\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\004007659\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\004007659\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.17.2\\microsoft.visualstudio.azure.containers.tools.targets.1.17.2.nupkg.sha512",
+    "C:\\Users\\004007659\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\004007659\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\004007659\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\004007659\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
