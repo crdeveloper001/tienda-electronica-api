@@ -1,32 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\004007659\\Desktop\\PROYECTOS PERSONALES\\Tienda Electronica v1\\tienda-electronica-api-server\\tienda-electronica-api-server.csproj": {}
+    "/home/claudiopcwork/Desktop/Desarrollo FULLSTACK/Tienda Electronica/tienda-electronica-api/tienda-electronica-api-server.csproj": {}
   },
   "projects": {
-    "C:\\Users\\004007659\\Desktop\\PROYECTOS PERSONALES\\Tienda Electronica v1\\tienda-electronica-api-server\\tienda-electronica-api-server.csproj": {
+    "/home/claudiopcwork/Desktop/Desarrollo FULLSTACK/Tienda Electronica/tienda-electronica-api/tienda-electronica-api-server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\004007659\\Desktop\\PROYECTOS PERSONALES\\Tienda Electronica v1\\tienda-electronica-api-server\\tienda-electronica-api-server.csproj",
+        "projectUniqueName": "/home/claudiopcwork/Desktop/Desarrollo FULLSTACK/Tienda Electronica/tienda-electronica-api/tienda-electronica-api-server.csproj",
         "projectName": "tienda-electronica-api-server",
-        "projectPath": "C:\\Users\\004007659\\Desktop\\PROYECTOS PERSONALES\\Tienda Electronica v1\\tienda-electronica-api-server\\tienda-electronica-api-server.csproj",
-        "packagesPath": "C:\\Users\\004007659\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\004007659\\Desktop\\PROYECTOS PERSONALES\\Tienda Electronica v1\\tienda-electronica-api-server\\obj\\",
+        "projectPath": "/home/claudiopcwork/Desktop/Desarrollo FULLSTACK/Tienda Electronica/tienda-electronica-api/tienda-electronica-api-server.csproj",
+        "packagesPath": "/home/claudiopcwork/.nuget/packages/",
+        "outputPath": "/home/claudiopcwork/Desktop/Desarrollo FULLSTACK/Tienda Electronica/tienda-electronica-api/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\004007659\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/claudiopcwork/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -45,13 +38,33 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Faker.Net": {
+              "target": "Package",
+              "version": "[2.0.154, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.15, )"
+            },
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
               "version": "[1.17.2, )"
             },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.13, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.19.1, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.30.1, )"
             }
           },
           "imports": [
@@ -60,8 +73,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -73,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/6.0.116/RuntimeIdentifierGraph.json"
         }
       }
     }
