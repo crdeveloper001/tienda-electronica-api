@@ -60,19 +60,19 @@ public class UserAccountsServices : IUserAccounts
         {
             UserAccounts errorPayload = new UserAccounts();
             errorPayload.clientRoleType = "UNDEFINED";
-            errorPayload.UserAccountActive = "NOT FOUND";
+            errorPayload.UserAccountActive = false;
             errorPayload.JWT = "NO AUTHORIZED OR NOT FOUND OR BAD CREDENTIALS";
             return errorPayload;
            
         }
         if (result.clientRoleType.Equals("Client") || result.clientRoleType.Equals("Administrator"))
         {
-            if (result.UserAccountActive != null && result.UserAccountActive.Equals("Enabled") )
+            if (result.UserAccountActive != null && result.UserAccountActive.Equals(true) )
             {
                 result.JWT = JWT_GENERATOR.GenerateToken();
                 return result;
             }
-            result.UserAccountActive = "Disabled";
+            result.UserAccountActive = false;
             result.JWT = "NO AUTHORIZED";
             return result;
         }

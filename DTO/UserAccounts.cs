@@ -21,7 +21,7 @@ public class UserAccounts
     public string clientPassword { get; set; }
     [NotNull]
     public string clientRoleType { get; set; }
-    public string? UserAccountActive { get; set; }
+    public bool? UserAccountActive { get; set; }
     public string? JWT { get; set; }
     
 }
