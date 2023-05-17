@@ -61,7 +61,7 @@ public class UserAccountsServices : IUserAccounts
             UserAccounts errorPayload = new UserAccounts();
             errorPayload.clientRoleType = "UNDEFINED";
             errorPayload.UserAccountActive = false;
-            errorPayload.JWT = "NO AUTHORIZED OR NOT FOUND OR BAD CREDENTIALS";
+            errorPayload.JWT = "USER NOT FOUND";
             return errorPayload;
            
         }
