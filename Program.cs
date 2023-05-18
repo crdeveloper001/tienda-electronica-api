@@ -11,10 +11,7 @@ using tienda_electronica_api_server.Interfaces;
 using tienda_electronica_api_server.Services;
 
 var builder = WebApplication.CreateBuilder(args);
-var port = Environment.GetEnvironmentVariable("RAILWAY_PORT") ?? "5000";
-
-    builder.WebHost.UseUrls($"http://tienda-api-server-v1:{port}");
-
+    
 
 // Add services to the container.
 builder.Services.AddSingleton<AppLogsService>();
