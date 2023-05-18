@@ -1,5 +1,6 @@
 using MongoDB.Bson;
 using MongoDB.Driver;
+using Microsoft.AspNetCore.Http;
 using tienda_electronica_api_server.DTO;
 using tienda_electronica_api_server.Interfaces;
 
@@ -22,6 +23,7 @@ public class AppLogsService : IAppLogs
     }
     public async Task<String> CreateAppLog(AppLogs log)
     {
+        
         log._id = ObjectId.GenerateNewId();
         await _serviceProvider.InsertOneAsync(log);
 

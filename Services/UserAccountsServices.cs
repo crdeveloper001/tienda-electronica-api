@@ -22,6 +22,7 @@ public class UserAccountsServices : IUserAccounts
 
     public async Task<string> CreateAccount(UserAccounts? account)
     {
+        account.UserAccountActive = true;
         await _serviceProvider.InsertOneAsync(account);
         return "User Account Created! please login with the credential of: "+account.clientUsername;
     }
