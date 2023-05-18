@@ -11,6 +11,7 @@ COPY ["tienda-electronica-api-server.csproj", "."]
 RUN dotnet restore "./tienda-electronica-api-server.csproj"
 COPY . .
 WORKDIR "/src/."
+
 RUN dotnet build "tienda-electronica-api-server.csproj" -c Release -o /app/build
 
 FROM build AS publish
@@ -19,4 +20,5 @@ RUN dotnet publish "tienda-electronica-api-server.csproj" -c Release -o /app/pub
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
+ENV API_URL=http://tienda-api.server.com
 ENTRYPOINT ["dotnet", "tienda-electronica-api-server.dll"]
