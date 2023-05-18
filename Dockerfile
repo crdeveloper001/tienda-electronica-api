@@ -15,7 +15,7 @@ WORKDIR "/src/."
 RUN dotnet build "tienda-electronica-api-server.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "tienda-electronica-api-server.csproj" -c Release -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "tienda-electronica-api-server.csproj" -c Release -o /app/publish 
 
 FROM base AS final
 WORKDIR /app
