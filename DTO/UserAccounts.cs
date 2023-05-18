@@ -6,21 +6,21 @@ public class UserAccounts
 {
     public long _id { get; set; }
     [NotNull]
-    public string clientName { get; set; }
+    public string? clientName { get; set; }
     [NotNull]
-    public string clientLastName { get; set; }
+    public string? clientLastName { get; set; }
     [NotNull]
     public int clientPhone { get; set; }
     [NotNull]
-    public string clientEmail { get; set; }
+    public string? clientEmail { get; set; }
     [NotNull]
-    public string clientDirection { get; set; }
+    public string? clientDirection { get; set; }
     [NotNull]
-    public string clientUsername { get; set; }
+    public string? clientUsername { get; set; }
     [NotNull]
-    public string clientPassword { get; set; }
+    public string? clientPassword { get; set; }
     [NotNull]
-    public string clientRoleType { get; set; }
+    public string? clientRoleType { get; set; }
     public bool? UserAccountActive { get; set; }
     public string? JWT { get; set; }
     

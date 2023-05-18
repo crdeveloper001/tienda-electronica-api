@@ -1,3 +1,4 @@
+using MongoDB.Bson;
 using MongoDB.Driver;
 using tienda_electronica_api_server.DTO;
 using tienda_electronica_api_server.Interfaces;
@@ -22,13 +23,14 @@ public class ProductsService : IProducts
 
     public async Task<String> CreateProduct(Products product)
     {
+        product._id = ObjectId.GenerateNewId();
         await _serviceProvider.InsertOneAsync(product);
         return "Product created in the app";
     }
 
     public async Task<String> DeleteProduct(string _id)
     {
-        await _serviceProvider.DeleteOneAsync(x => x._id == _id);
+        await _serviceProvider.DeleteOneAsync(x => x._id == ObjectId.Parse(_id));
         return "Product deleted";
     }
 
@@ -40,7 +42,7 @@ public class ProductsService : IProducts
 
     public async Task<IEnumerable<Products>> SearchProduct(string name)
     {
-        var productInformation = await _serviceProvider.FindAsync(x => x.productName == name);
+        var productInformation = await _serviceProvider.FindAsync(x => x.productName == name || x.productType == name);
 
         return productInformation.ToList();
     }

@@ -1,3 +1,4 @@
+using MongoDB.Bson;
 using MongoDB.Driver;
 using tienda_electronica_api_server.DTO;
 using tienda_electronica_api_server.Interfaces;
@@ -21,6 +22,7 @@ public class AppLogsService : IAppLogs
     }
     public async Task<String> CreateAppLog(AppLogs log)
     {
+        log._id = ObjectId.GenerateNewId();
         await _serviceProvider.InsertOneAsync(log);
 
         return "New Event in the system of type: "+log.eventType;
