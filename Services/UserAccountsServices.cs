@@ -8,7 +8,7 @@ public class UserAccountsServices : IUserAccounts
 {
     private readonly IMongoCollection<UserAccounts?> _serviceProvider;
     private jwt_TokenGenerator JWT_GENERATOR = new jwt_TokenGenerator();
-    
+
     public UserAccountsServices(IMongoClient mongoClient)
     {
         var database = mongoClient.GetDatabase("TiendaElectronicaDBCloud");
@@ -24,18 +24,30 @@ public class UserAccountsServices : IUserAccounts
     {
         account.UserAccountActive = true;
         await _serviceProvider.InsertOneAsync(account);
-        return "User Account Created! please login with the credential of: "+account.clientUsername;
+        return "User Account Created! please login with the credential of: " + account.clientUsername;
     }
 
     public async Task<string> UpdateAccount(UserAccounts? update)
     {
-        var result = await _serviceProvider.ReplaceOneAsync(x => x._id == update._id,update);
+        if (update.UserAccountActive.ToString() == "true")
+        {
+            update.UserAccountActive = true;
+            var result = await _serviceProvider.ReplaceOneAsync(x => x._id == update._id, update);
+
+        }
+        if (update.UserAccountActive.ToString() == "false")
+        {
+            update.UserAccountActive = false;
+            var result = await _serviceProvider.ReplaceOneAsync(x => x._id == update._id, update);
+
+        }
+
         return "User account updated";
     }
 
     public async Task<string> DeleteAccount(long _id)
     {
-        
+
         var result = await _serviceProvider.DeleteOneAsync(x => x._id == _id);
         return "User Account deleted";
     }
@@ -64,11 +76,11 @@ public class UserAccountsServices : IUserAccounts
             errorPayload.UserAccountActive = false;
             errorPayload.JWT = "USER NOT FOUND";
             return errorPayload;
-           
+
         }
         if (result.clientRoleType.Equals("Client") || result.clientRoleType.Equals("Administrator"))
         {
-            if (result.UserAccountActive != null && result.UserAccountActive.Equals(true) )
+            if (result.UserAccountActive != null && result.UserAccountActive.Equals(true))
             {
                 result.JWT = JWT_GENERATOR.GenerateToken();
                 return result;
