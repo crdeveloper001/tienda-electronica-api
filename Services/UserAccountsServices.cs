@@ -29,13 +29,14 @@ public class UserAccountsServices : IUserAccounts
 
     public async Task<string> UpdateAccount(UserAccounts? update)
     {
-        if (update.UserAccountActive.ToString() == "true")
+        
+        if (update.UserAccountActive == true)
         {
             update.UserAccountActive = true;
             var result = await _serviceProvider.ReplaceOneAsync(x => x._id == update._id, update);
 
         }
-        if (update.UserAccountActive.ToString() == "false")
+        if (update.UserAccountActive == false)
         {
             update.UserAccountActive = false;
             var result = await _serviceProvider.ReplaceOneAsync(x => x._id == update._id, update);
