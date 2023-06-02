@@ -23,19 +23,22 @@ public class ProductsService : IProducts
 
     public async Task<String> CreateProduct(Products product)
     {
-        product._id = ObjectId.GenerateNewId();
+
+        string randomId = ObjectId.GenerateNewId().ToString();
+        product._id = randomId;
         await _serviceProvider.InsertOneAsync(product);
         return "Product created in the app";
     }
 
     public async Task<String> DeleteProduct(string _id)
     {
-        await _serviceProvider.DeleteOneAsync(x => x._id == ObjectId.Parse(_id));
+        await _serviceProvider.DeleteOneAsync(x => x._id == _id);
         return "Product deleted";
     }
 
     public async Task<String> UpdateProduct(Products update)
     {
+        
         await _serviceProvider.ReplaceOneAsync(x => x._id == update._id, update);
         return "Product Updated";
     }

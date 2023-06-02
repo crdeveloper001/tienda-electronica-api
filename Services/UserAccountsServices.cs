@@ -12,7 +12,7 @@ public class UserAccountsServices : IUserAccounts
     public UserAccountsServices(IMongoClient mongoClient)
     {
         var database = mongoClient.GetDatabase("TiendaElectronicaDBCloud");
-        _serviceProvider = database.GetCollection<UserAccounts>("UserAccounts");
+        _serviceProvider = database.GetCollection<UserAccounts>("UserAccounts")!;
     }
     public async Task<IEnumerable<UserAccounts?>> GetUserAccounts()
     {
@@ -22,7 +22,7 @@ public class UserAccountsServices : IUserAccounts
 
     public async Task<string> CreateAccount(UserAccounts? account)
     {
-        account.UserAccountActive = true;
+        account!.UserAccountActive = true;
         await _serviceProvider.InsertOneAsync(account);
         return "User Account Created! please login with the credential of: " + account.clientUsername;
     }
@@ -30,16 +30,16 @@ public class UserAccountsServices : IUserAccounts
     public async Task<string> UpdateAccount(UserAccounts? update)
     {
         
-        if (update.UserAccountActive == true)
+        if (update?.UserAccountActive == true)
         {
             update.UserAccountActive = true;
-            var result = await _serviceProvider.ReplaceOneAsync(x => x._id == update._id, update);
+            var result = await _serviceProvider.ReplaceOneAsync(x => x!._id == update._id, update);
 
         }
-        if (update.UserAccountActive == false)
+        if (update?.UserAccountActive == false)
         {
             update.UserAccountActive = false;
-            var result = await _serviceProvider.ReplaceOneAsync(x => x._id == update._id, update);
+            var result = await _serviceProvider.ReplaceOneAsync(x => x!._id == update._id, update);
 
         }
 
@@ -49,13 +49,13 @@ public class UserAccountsServices : IUserAccounts
     public async Task<string> DeleteAccount(long _id)
     {
 
-        var result = await _serviceProvider.DeleteOneAsync(x => x._id == _id);
+        var result = await _serviceProvider.DeleteOneAsync(x => x!._id == _id);
         return "User Account deleted";
     }
 
     public async Task<IEnumerable<UserAccounts?>> SearchAccount(string name)
     {
-        var accountInformation = await _serviceProvider.FindAsync(x => x.clientName == name);
+        var accountInformation = await _serviceProvider.FindAsync(x => x!.clientName == name);
 
         return accountInformation.ToList();
     }
@@ -65,10 +65,10 @@ public class UserAccountsServices : IUserAccounts
     /// </summary>
     /// <param name="credentials"></param>
     /// <returns></returns>
-    public async Task<UserAccounts> AuthorizeUserAccount(Authorization credentials)
+    public Task<UserAccounts> AuthorizeUserAccount(Authorization credentials)
     {
         var result = _serviceProvider.Find(x =>
-            x.clientUsername == credentials.username && x.clientPassword == credentials.password).FirstOrDefault();
+            x!.clientUsername == credentials.username && x.clientPassword == credentials.password).FirstOrDefault();
 
         if (result == null)
         {
@@ -76,7 +76,7 @@ public class UserAccountsServices : IUserAccounts
             errorPayload.clientRoleType = "UNDEFINED";
             errorPayload.UserAccountActive = false;
             errorPayload.JWT = "USER NOT FOUND";
-            return errorPayload;
+            return Task.FromResult(errorPayload);
 
         }
         if (result.clientRoleType.Equals("Client") || result.clientRoleType.Equals("Administrator"))
@@ -84,14 +84,14 @@ public class UserAccountsServices : IUserAccounts
             if (result.UserAccountActive != null && result.UserAccountActive.Equals(true))
             {
                 result.JWT = JWT_GENERATOR.GenerateToken();
-                return result;
+                return Task.FromResult(result);
             }
             result.UserAccountActive = false;
             result.JWT = "NO AUTHORIZED";
-            return result;
+            return Task.FromResult(result);
         }
 
-        return null;
+        return Task.FromResult<UserAccounts>(null!);
 
     }
 }

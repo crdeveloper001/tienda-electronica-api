@@ -6,7 +6,7 @@ namespace tienda_electronica_api_server.DTO;
 public class Products
 {
     
-    public ObjectId? _id { get; set; }
+    public string? _id { get; set; }
     [NotNull]
     public string? productName { get; set; }
     [NotNull]
