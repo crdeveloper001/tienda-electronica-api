@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Http.Features;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using MongoDB.Driver;
@@ -18,6 +19,7 @@ builder.Services.AddSingleton<AppLogsService>();
 builder.Services.AddSingleton<UserAccountsServices>();
 builder.Services.AddSingleton<ProductsService>();
 builder.Services.AddSingleton<ProductsOrdersService>();
+builder.Services.AddSingleton<UploadFiles>();
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -88,6 +90,14 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 
+builder.Services.Configure<FormOptions>(options =>
+{
+    options.MultipartBodyLengthLimit = int.MaxValue;
+    options.ValueLengthLimit = int.MaxValue;
+    options.MemoryBufferThreshold = int.MaxValue;
+});
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -98,6 +108,7 @@ if (app.Environment.IsDevelopment())
     
 }
 
+app.UseStaticFiles();
 app.UseHttpsRedirection();
 app.UseCors();
 app.UseAuthorization();
