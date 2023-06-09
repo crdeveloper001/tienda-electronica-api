@@ -295,3 +295,4 @@ C:/Users/004007659/Desktop/PROYECTOS PERSONALES/Tienda Electronica v1/tienda-ele
 /home/claudiopcwork/Desktop/Desarrollo FULLSTACK/Tienda Electronica/tienda-electronica-api/obj/Debug/net6.0/ref/tienda-electronica-api-server.dll
 /home/claudiopcwork/Desktop/Desarrollo FULLSTACK/Tienda Electronica/tienda-electronica-api/obj/Debug/net6.0/tienda-electronica-api-server.pdb
 /home/claudiopcwork/Desktop/Desarrollo FULLSTACK/Tienda Electronica/tienda-electronica-api/obj/Debug/net6.0/tienda-electronica-api-server.genruntimeconfig.cache
+/home/claudiopcwork/Desktop/Desarrollo FULLSTACK/Tienda Electronica/tienda-electronica-api/bin/Debug/net6.0/tienda-electronica-api-server.staticwebassets.runtime.json

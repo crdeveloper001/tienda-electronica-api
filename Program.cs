@@ -108,7 +108,9 @@ if (app.Environment.IsDevelopment())
     
 }
 
-app.UseStaticFiles();
+app.UseDefaultFiles(); // Enables serving default files (e.g., index.html)
+app.UseStaticFiles();  // Enables serving static files from the wwwroot folder
+
 app.UseHttpsRedirection();
 app.UseCors();
 app.UseAuthorization();
