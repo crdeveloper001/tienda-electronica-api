@@ -13,25 +13,25 @@ public class UploadFiles
         _hostEnvironment = hostEnvironment;
     }
     
-    public string UploadImage(IFormFile? file)
+    public async Task<string> UploadImage(IFormFile? file)
     {
         try
         {
           
             if (file != null && file.Length > 0)
             {
-                var uploadsFolder = Path.Combine(_hostEnvironment.WebRootPath, "Resources","Images");
-                var uniqueFileName = Guid.NewGuid().ToString() + "_" + file.FileName;
-                var filePath = Path.Combine(uploadsFolder, uniqueFileName);
-                file.CopyTo(new FileStream(filePath, FileMode.Create));
-        
-                // You can save the file path to a database or perform other operations here
+                var uploadsFolder = Path.Combine(_hostEnvironment.WebRootPath, "Resources","ProfilesImages");
+                string uniqueFileName = Path.GetRandomFileName() + Path.GetExtension(file.FileName);
+                string filePath = Path.Combine(uploadsFolder, uniqueFileName);
+                using (var fileStream = new FileStream(filePath, FileMode.Create))
+                {
+                    await file.CopyToAsync(fileStream);
+                }
 
-                return "Sucess";
+
+                return filePath;
             }
-           
-
-
+            
         }
         catch (Exception e)
         {
