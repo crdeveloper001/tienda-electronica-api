@@ -19,5 +19,7 @@ public class Products
     public int productPrice { get; set; }
     [NotNull]
     public int productStock { get; set; }
+    [NotNull]
+    public int? productQuantity { get; set; }
     
 }

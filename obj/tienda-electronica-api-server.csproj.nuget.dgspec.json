@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/claudiopcwork/Desktop/Desarrollo FULLSTACK/Tienda Electronica/tienda-electronica-api/tienda-electronica-api-server.csproj": {}
+    "/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/TIENDA ELECTRONICA/tienda-electronica-api/tienda-electronica-api-server.csproj": {}
   },
   "projects": {
-    "/home/claudiopcwork/Desktop/Desarrollo FULLSTACK/Tienda Electronica/tienda-electronica-api/tienda-electronica-api-server.csproj": {
+    "/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/TIENDA ELECTRONICA/tienda-electronica-api/tienda-electronica-api-server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/claudiopcwork/Desktop/Desarrollo FULLSTACK/Tienda Electronica/tienda-electronica-api/tienda-electronica-api-server.csproj",
+        "projectUniqueName": "/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/TIENDA ELECTRONICA/tienda-electronica-api/tienda-electronica-api-server.csproj",
         "projectName": "tienda-electronica-api-server",
-        "projectPath": "/home/claudiopcwork/Desktop/Desarrollo FULLSTACK/Tienda Electronica/tienda-electronica-api/tienda-electronica-api-server.csproj",
-        "packagesPath": "/home/claudiopcwork/.nuget/packages/",
-        "outputPath": "/home/claudiopcwork/Desktop/Desarrollo FULLSTACK/Tienda Electronica/tienda-electronica-api/obj/",
+        "projectPath": "/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/TIENDA ELECTRONICA/tienda-electronica-api/tienda-electronica-api-server.csproj",
+        "packagesPath": "/home/claudio/.nuget/packages/",
+        "outputPath": "/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/TIENDA ELECTRONICA/tienda-electronica-api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/claudiopcwork/.nuget/NuGet/NuGet.Config"
+          "/home/claudio/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -73,7 +73,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -85,7 +86,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/6.0.116/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/claudio/.dotnet/sdk/6.0.410/RuntimeIdentifierGraph.json"
         }
       }
     }

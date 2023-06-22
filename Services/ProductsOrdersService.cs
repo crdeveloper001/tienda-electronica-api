@@ -1,3 +1,4 @@
+using MongoDB.Bson;
 using MongoDB.Driver;
 using tienda_electronica_api_server.DTO;
 using tienda_electronica_api_server.Interfaces;
@@ -20,7 +21,9 @@ public class ProductsOrdersService : IProductOrders
     }
 
     public async Task<String> CreateProductOrder(ProductOrders order)
-    {
+    {  
+        string randomId = ObjectId.GenerateNewId().ToString();
+        order._id = randomId;
         await _serviceProvider.InsertOneAsync(order);
         return "Order created";
     }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "a2Yp1Kvm9C806zNnLYpLhFT1FjcklGxXakML6MFKXZM=",
+  "Hash": "Jkl3D5z2K2mpL5wB+YKdjnoZT8YaqBdmkw/9N0gOA6Q=",
   "Source": "tienda-electronica-api-server",
   "BasePath": "_content/tienda-electronica-api-server",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "tienda-electronica-api-server/wwwroot",
       "Source": "tienda-electronica-api-server",
-      "ContentRoot": "/home/claudiopcwork/Desktop/Desarrollo FULLSTACK/Tienda Electronica/tienda-electronica-api/wwwroot/",
+      "ContentRoot": "/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/TIENDA ELECTRONICA/tienda-electronica-api/wwwroot/",
       "BasePath": "_content/tienda-electronica-api-server",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "/home/claudiopcwork/Desktop/Desarrollo FULLSTACK/Tienda Electronica/tienda-electronica-api/wwwroot/index.html",
+      "Identity": "/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/TIENDA ELECTRONICA/tienda-electronica-api/wwwroot/index.html",
       "SourceId": "tienda-electronica-api-server",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/claudiopcwork/Desktop/Desarrollo FULLSTACK/Tienda Electronica/tienda-electronica-api/wwwroot/",
+      "ContentRoot": "/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/TIENDA ELECTRONICA/tienda-electronica-api/wwwroot/",
       "BasePath": "_content/tienda-electronica-api-server",
       "RelativePath": "index.html",
       "AssetKind": "All",

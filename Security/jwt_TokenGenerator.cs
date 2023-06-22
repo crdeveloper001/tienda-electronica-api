@@ -29,6 +29,6 @@ public class jwt_TokenGenerator
         var tokenString = tokenHandler.WriteToken(token);
       
         
-        return "Bearer: " + tokenString;
+        return "Bearer " + tokenString;
     }
 }

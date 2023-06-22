@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using tienda_electronica_api_server.DTO;
@@ -11,6 +12,7 @@ namespace tienda_electronica_api_server.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class AppLogsController : ControllerBase
     {
         private readonly AppLogsService _service;
@@ -19,7 +21,7 @@ namespace tienda_electronica_api_server.Controllers
         {
             this._service = appLogsService;
         }
-
+        
         [HttpGet]
         public async Task<IEnumerable<AppLogs>> GetAllAppLogs()
         {
