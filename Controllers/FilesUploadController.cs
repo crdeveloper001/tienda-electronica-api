@@ -25,5 +25,17 @@ namespace tienda_electronica_api_server.Controllers
             Task<string> response = _service.UploadImage(image);
             return Task.FromResult(response);
         }
+
+        [HttpGet]
+        public Task<List<string>> GetAllImages()
+        {
+            return _service.GetAllImagesList();
+        }
+
+        [HttpDelete("{imageName}")]
+        public Task<string> DeleteImage(string imageName)
+        {
+            return _service.DeleteImageSelect(imageName);
+        }
     }
 }

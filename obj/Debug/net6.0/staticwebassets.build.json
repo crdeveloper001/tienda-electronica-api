@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Jkl3D5z2K2mpL5wB+YKdjnoZT8YaqBdmkw/9N0gOA6Q=",
+  "Hash": "7m7pbFI89bNITJWpVS63wAvbtNRSotiocOyvnOvqVF8=",
   "Source": "tienda-electronica-api-server",
   "BasePath": "_content/tienda-electronica-api-server",
   "Mode": "Default",
@@ -32,6 +32,57 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/index.html"
+    },
+    {
+      "Identity": "/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/TIENDA ELECTRONICA/tienda-electronica-api/wwwroot/Resources/ProfilesImages/ia1g5rps.grw.png",
+      "SourceId": "tienda-electronica-api-server",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/TIENDA ELECTRONICA/tienda-electronica-api/wwwroot/",
+      "BasePath": "_content/tienda-electronica-api-server",
+      "RelativePath": "Resources/ProfilesImages/ia1g5rps.grw.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Resources/ProfilesImages/ia1g5rps.grw.png"
+    },
+    {
+      "Identity": "/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/TIENDA ELECTRONICA/tienda-electronica-api/wwwroot/Resources/ProfilesImages/qitkiasg.pof.png",
+      "SourceId": "tienda-electronica-api-server",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/TIENDA ELECTRONICA/tienda-electronica-api/wwwroot/",
+      "BasePath": "_content/tienda-electronica-api-server",
+      "RelativePath": "Resources/ProfilesImages/qitkiasg.pof.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Resources/ProfilesImages/qitkiasg.pof.png"
+    },
+    {
+      "Identity": "/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/TIENDA ELECTRONICA/tienda-electronica-api/wwwroot/Resources/ProfilesImages/ub2x1t25.5yk.png",
+      "SourceId": "tienda-electronica-api-server",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/TIENDA ELECTRONICA/tienda-electronica-api/wwwroot/",
+      "BasePath": "_content/tienda-electronica-api-server",
+      "RelativePath": "Resources/ProfilesImages/ub2x1t25.5yk.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Resources/ProfilesImages/ub2x1t25.5yk.png"
     }
   ]
 }
