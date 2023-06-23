@@ -1,22 +1,23 @@
 
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
+using Microsoft.AspNetCore.Mvc.Routing;
+using tienda_electronica_api_server.Interfaces;
+
 namespace tienda_electronica_api_server.Services;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using System;
 using System.IO;
-public class UploadFiles
+public class UploadFiles : IUploadFiles
 {
     private readonly IWebHostEnvironment _hostEnvironment;
-
-    public UploadFiles(IWebHostEnvironment hostEnvironment)
+    private readonly IHttpContextAccessor _httpContextAccessor;
+    public UploadFiles(IWebHostEnvironment hostEnvironment, IHttpContextAccessor httpContextAccessor)
     {
         _hostEnvironment = hostEnvironment;
+        _httpContextAccessor = httpContextAccessor;
     }
-    /// <summary>
-    /// THIS METHOD UPLOAD A IMAGE INTO WWWROOT AND RETRIEVE THE FILE PATH OF THAT IMAGE
-    /// </summary>
-    /// <param name="file"></param>
-    /// <returns></returns>
     public async Task<string> UploadImage(IFormFile? file)
     {
         try
@@ -49,17 +50,19 @@ public class UploadFiles
     {
         try
         {
+            string baseUrl = $"{_httpContextAccessor.HttpContext!.Request.Scheme}://{_httpContextAccessor.HttpContext.Request.Host}";
             string imagesPath = Path.Combine(_hostEnvironment.WebRootPath, "Resources","ProfilesImages");
             string[] imageFiles = Directory.GetFiles(imagesPath);
 
-            List<string> imagePaths = new List<string>();
+            List<string> imageUrls = new List<string>();
 
             foreach (string imagePath in imageFiles)
             {
-                string imageName = Path.GetFullPath(imagePath);
-                imagePaths.Add(imageName);
+                string imageName = Path.GetFileName(imagePath);
+                string imageUrl = $"{baseUrl}/Resources/ProfilesImages/{imageName}";
+                imageUrls.Add(imageUrl);
             }
-            return Task.FromResult(imagePaths);
+            return Task.FromResult(imageUrls);
         }
         catch (DirectoryNotFoundException error)
         {

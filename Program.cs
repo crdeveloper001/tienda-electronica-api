@@ -5,6 +5,7 @@ using System.Drawing;
 using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Http.Features;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using MongoDB.Driver;
@@ -20,9 +21,11 @@ builder.Services.AddSingleton<UserAccountsServices>();
 builder.Services.AddSingleton<ProductsService>();
 builder.Services.AddSingleton<ProductsOrdersService>();
 builder.Services.AddSingleton<UploadFiles>();
+builder.Services.AddHttpContextAccessor();
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
+
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddCors(options =>
