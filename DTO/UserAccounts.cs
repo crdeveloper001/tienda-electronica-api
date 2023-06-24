@@ -6,6 +6,10 @@ public class UserAccounts
 {
     public long _id { get; set; }
     [NotNull]
+    public FormFile? clientProfileImage { get; set; }
+    [NotNull]
+    public string? clientUriProfile { get; set; }      
+    [NotNull]
     public string? clientName { get; set; }
     [NotNull]
     public string? clientLastName { get; set; }

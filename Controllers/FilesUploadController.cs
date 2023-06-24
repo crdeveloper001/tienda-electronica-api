@@ -22,7 +22,7 @@ namespace tienda_electronica_api_server.Controllers
         [HttpPost,DisableRequestSizeLimit]
         public Task<Task<string>> PostUpload(IFormFile? image)
         {
-            Task<string> response = _service.UploadImage(image);
+            Task<string> response = _service.UploadProfileImage(image);
             return Task.FromResult(response);
         }
 

@@ -18,14 +18,47 @@ public class UploadFiles : IUploadFiles
         _hostEnvironment = hostEnvironment;
         _httpContextAccessor = httpContextAccessor;
     }
-    public async Task<string> UploadImage(IFormFile? file)
+
+    public UploadFiles()
+    {
+        
+    }
+    public async Task<string> UploadProfileImage(IFormFile? file)
+    {
+        try
+        {
+            string baseUrl = $"{_httpContextAccessor.HttpContext!.Request.Scheme}://{_httpContextAccessor.HttpContext.Request.Host}";
+            if (file != null && file.Length > 0)
+            {
+                var uploadsFolder = Path.Combine(_hostEnvironment.WebRootPath, "Resources","ProfilesImages");
+                string uniqueFileName = Path.GetRandomFileName() + Path.GetExtension(file.FileName);
+                string filePath = Path.Combine(uploadsFolder, uniqueFileName);
+                using (var fileStream = new FileStream(filePath, FileMode.Create))
+                {
+                    await file.CopyToAsync(fileStream);
+                }
+                // Retorna el nombre del folder en donde se guardo la imagen exactamente en el api y este se acomoda en el front para verlo
+                string folderPath = filePath.Substring(_hostEnvironment.WebRootPath.Length).Replace('\\', '/');
+
+                return baseUrl+folderPath;
+            }
+            
+        }
+        catch (Exception e)
+        {
+            return e.Message;
+        }
+        return "no paso nada";
+    }
+
+    public async Task<string> UploadProductImage(IFormFile file)
     {
         try
         {
           
             if (file != null && file.Length > 0)
             {
-                var uploadsFolder = Path.Combine(_hostEnvironment.WebRootPath, "Resources","ProfilesImages");
+                var uploadsFolder = Path.Combine(_hostEnvironment.WebRootPath, "Resources","Products");
                 string uniqueFileName = Path.GetRandomFileName() + Path.GetExtension(file.FileName);
                 string filePath = Path.Combine(uploadsFolder, uniqueFileName);
                 using (var fileStream = new FileStream(filePath, FileMode.Create))

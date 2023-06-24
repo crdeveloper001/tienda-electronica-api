@@ -30,8 +30,8 @@ namespace tienda_electronica_api_server.Controllers
         {
             return await _service.SearchAccount(name);
         }
-        [HttpPost]
-        public async Task<string> PostUserAccount(UserAccounts? user)
+        [HttpPost,DisableRequestSizeLimit]
+        public async Task<string> PostUserAccount([FromBody] UserAccounts? user)
         {
             return await _service.CreateAccount(user);
         }

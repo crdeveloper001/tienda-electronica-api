@@ -1,4 +1,5 @@
 using MongoDB.Driver;
+using Newtonsoft.Json;
 using tienda_electronica_api_server.DTO;
 using tienda_electronica_api_server.Interfaces;
 using tienda_electronica_api_server.Security;
@@ -8,7 +9,9 @@ public class UserAccountsServices : IUserAccounts
 {
     private readonly IMongoCollection<UserAccounts?> _serviceProvider;
     private jwt_TokenGenerator JWT_GENERATOR = new jwt_TokenGenerator();
+    private UploadFiles _uploadFilesService = new UploadFiles();
 
+    [JsonConstructor]
     public UserAccountsServices(IMongoClient mongoClient)
     {
         var database = mongoClient.GetDatabase("TiendaElectronicaDBCloud");
@@ -22,9 +25,24 @@ public class UserAccountsServices : IUserAccounts
 
     public async Task<string> CreateAccount(UserAccounts? account)
     {
-        account!.UserAccountActive = true;
-        await _serviceProvider.InsertOneAsync(account);
+        if (account!.clientProfileImage != null && account.clientProfileImage!.Length > 0)
+        {
+            string profilePhotoUrl = await _uploadFilesService.UploadProfileImage(account.clientProfileImage);
+            account.clientUriProfile = profilePhotoUrl;
+            account!.UserAccountActive = true;
+            await _serviceProvider.InsertOneAsync(account);
+            return "User Account Created! please login with the credential of: " + account.clientUsername;
+        }
+        if (account.clientProfileImage!.Length == 0 || account.clientProfileImage == null)
+        {
+            account!.UserAccountActive = true;
+            await _serviceProvider.InsertOneAsync(account);
+            return "User Account Created! please login with the credential of: " + account.clientUsername;
+        }
+        
         return "User Account Created! please login with the credential of: " + account.clientUsername;
+       
+       
     }
 
     public async Task<string> UpdateAccount(UserAccounts? update)
