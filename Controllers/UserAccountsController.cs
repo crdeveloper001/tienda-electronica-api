@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MongoDB.Driver;
+using Newtonsoft.Json;
 using tienda_electronica_api_server.DTO;
 using tienda_electronica_api_server.Services;
 
@@ -30,9 +31,11 @@ namespace tienda_electronica_api_server.Controllers
         {
             return await _service.SearchAccount(name);
         }
-        [HttpPost,DisableRequestSizeLimit]
-        public async Task<string> PostUserAccount([FromBody] UserAccounts? user)
+        [HttpPost]
+        public async Task<string> PostUserAccount(UserAccounts? user)
         {
+           
+           
             return await _service.CreateAccount(user);
         }
         [HttpPut]

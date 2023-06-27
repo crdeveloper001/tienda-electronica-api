@@ -20,10 +20,10 @@ namespace tienda_electronica_api_server.Controllers
         }
         
         [HttpPost,DisableRequestSizeLimit]
-        public Task<Task<string>> PostUpload(IFormFile? image)
+        public async Task<IActionResult> PostUpload(IFormFile? image)
         {
-            Task<string> response = _service.UploadProfileImage(image);
-            return Task.FromResult(response);
+            var response = await _service.UploadProfileImage(image);
+            return Ok(response);
         }
 
         [HttpGet]

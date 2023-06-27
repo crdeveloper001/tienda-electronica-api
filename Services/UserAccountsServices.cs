@@ -25,24 +25,10 @@ public class UserAccountsServices : IUserAccounts
 
     public async Task<string> CreateAccount(UserAccounts? account)
     {
-        if (account!.clientProfileImage != null && account.clientProfileImage!.Length > 0)
-        {
-            string profilePhotoUrl = await _uploadFilesService.UploadProfileImage(account.clientProfileImage);
-            account.clientUriProfile = profilePhotoUrl;
-            account!.UserAccountActive = true;
-            await _serviceProvider.InsertOneAsync(account);
-            return "User Account Created! please login with the credential of: " + account.clientUsername;
-        }
-        if (account.clientProfileImage!.Length == 0 || account.clientProfileImage == null)
-        {
-            account!.UserAccountActive = true;
-            await _serviceProvider.InsertOneAsync(account);
-            return "User Account Created! please login with the credential of: " + account.clientUsername;
-        }
-        
+        account!.UserAccountActive = true;
+        await _serviceProvider.InsertOneAsync(account);
         return "User Account Created! please login with the credential of: " + account.clientUsername;
-       
-       
+        
     }
 
     public async Task<string> UpdateAccount(UserAccounts? update)
