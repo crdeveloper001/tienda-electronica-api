@@ -1,32 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/tienda-electronica-api/tienda-electronica-api-server.csproj": {}
+    "/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/TIENDA ELECTRONICA/tienda-electronica-api/tienda-electronica-api-server.csproj": {}
   },
   "projects": {
-    "/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/tienda-electronica-api/tienda-electronica-api-server.csproj": {
+    "/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/TIENDA ELECTRONICA/tienda-electronica-api/tienda-electronica-api-server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/tienda-electronica-api/tienda-electronica-api-server.csproj",
+        "projectUniqueName": "/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/TIENDA ELECTRONICA/tienda-electronica-api/tienda-electronica-api-server.csproj",
         "projectName": "tienda-electronica-api-server",
-        "projectPath": "/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/tienda-electronica-api/tienda-electronica-api-server.csproj",
-        "packagesPath": "/Users/claudiogonzalezhernandez/.nuget/packages/",
-        "outputPath": "/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/tienda-electronica-api/obj/",
+        "projectPath": "/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/TIENDA ELECTRONICA/tienda-electronica-api/tienda-electronica-api-server.csproj",
+        "packagesPath": "/home/claudio/.nuget/packages/",
+        "outputPath": "/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/TIENDA ELECTRONICA/tienda-electronica-api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/claudiogonzalezhernandez/.nuget/NuGet/NuGet.Config"
+          "/home/claudio/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net7.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
-          "/usr/local/share/dotnet/sdk/7.0.304/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {}
           }
         },
@@ -37,8 +35,8 @@
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "dependencies": {
             "Faker.Net": {
               "target": "Package",
@@ -88,7 +86,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.304/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.108/RuntimeIdentifierGraph.json"
         }
       }
     }
