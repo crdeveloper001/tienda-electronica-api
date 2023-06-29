@@ -1,0 +1,49 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/tienda-electronica-api/wwwroot/Resources/ProfilesImages/23ka4fwv.myt.jpg",
+      "PackagePath": "staticwebassets/Resources/ProfilesImages/23ka4fwv.myt.jpg"
+    },
+    {
+      "Id": "/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/tienda-electronica-api/wwwroot/Resources/ProfilesImages/3c4h1lmz.xta.jpg",
+      "PackagePath": "staticwebassets/Resources/ProfilesImages/3c4h1lmz.xta.jpg"
+    },
+    {
+      "Id": "/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/tienda-electronica-api/wwwroot/Resources/ProfilesImages/4tmsodhl.kas.jpg",
+      "PackagePath": "staticwebassets/Resources/ProfilesImages/4tmsodhl.kas.jpg"
+    },
+    {
+      "Id": "/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/tienda-electronica-api/wwwroot/Resources/ProfilesImages/caeyg0dm.5fk.jpg",
+      "PackagePath": "staticwebassets/Resources/ProfilesImages/caeyg0dm.5fk.jpg"
+    },
+    {
+      "Id": "/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/tienda-electronica-api/wwwroot/Resources/ProfilesImages/fcasn2rw.u0x.png",
+      "PackagePath": "staticwebassets/Resources/ProfilesImages/fcasn2rw.u0x.png"
+    },
+    {
+      "Id": "/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/tienda-electronica-api/wwwroot/Resources/ProfilesImages/vxxoi2kd.sef.png",
+      "PackagePath": "staticwebassets/Resources/ProfilesImages/vxxoi2kd.sef.png"
+    },
+    {
+      "Id": "/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/tienda-electronica-api/wwwroot/index.html",
+      "PackagePath": "staticwebassets/index.html"
+    },
+    {
+      "Id": "obj/Debug/net6.0/staticwebassets/msbuild.build.tienda-electronica-api-server.props",
+      "PackagePath": "build\\tienda-electronica-api-server.props"
+    },
+    {
+      "Id": "obj/Debug/net6.0/staticwebassets/msbuild.buildMultiTargeting.tienda-electronica-api-server.props",
+      "PackagePath": "buildMultiTargeting\\tienda-electronica-api-server.props"
+    },
+    {
+      "Id": "obj/Debug/net6.0/staticwebassets/msbuild.buildTransitive.tienda-electronica-api-server.props",
+      "PackagePath": "buildTransitive\\tienda-electronica-api-server.props"
+    },
+    {
+      "Id": "obj/Debug/net6.0/staticwebassets/msbuild.tienda-electronica-api-server.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

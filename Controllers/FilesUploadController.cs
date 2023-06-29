@@ -20,10 +20,10 @@ namespace tienda_electronica_api_server.Controllers
         }
         
         [HttpPost,DisableRequestSizeLimit]
-        public async Task<IActionResult> PostUpload(IFormFile? image)
+        public string PostUpload(IFormFile? image)
         {
-            var response = await _service.UploadProfileImage(image);
-            return Ok(response);
+            var response =  _service.UploadProfileImage(image);
+            return response;
         }
 
         [HttpGet]
@@ -33,7 +33,7 @@ namespace tienda_electronica_api_server.Controllers
         }
 
         [HttpDelete("{imageName}")]
-        public Task<string> DeleteImage(string imageName)
+        public string DeleteImage(string imageName)
         {
             return _service.DeleteImageSelect(imageName);
         }

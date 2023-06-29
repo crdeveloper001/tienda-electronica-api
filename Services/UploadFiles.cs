@@ -23,7 +23,7 @@ public class UploadFiles : IUploadFiles
     {
         
     }
-    public async Task<string> UploadProfileImage(IFormFile? file)
+    public string UploadProfileImage(IFormFile? file)
     {
         try
         {
@@ -35,7 +35,7 @@ public class UploadFiles : IUploadFiles
                 string filePath = Path.Combine(uploadsFolder, uniqueFileName);
                 using (var fileStream = new FileStream(filePath, FileMode.Create))
                 {
-                    await file.CopyToAsync(fileStream);
+                    file.CopyToAsync(fileStream);
                 }
                 // Retorna el nombre del folder en donde se guardo la imagen exactamente en el api y este se acomoda en el front para verlo
                 string folderPath = filePath.Substring(_hostEnvironment.WebRootPath.Length).Replace('\\', '/');
@@ -51,7 +51,7 @@ public class UploadFiles : IUploadFiles
         return "no paso nada";
     }
 
-    public async Task<string> UploadProductImage(IFormFile file)
+    public string UploadProductImage(IFormFile file)
     {
         try
         {
@@ -63,7 +63,7 @@ public class UploadFiles : IUploadFiles
                 string filePath = Path.Combine(uploadsFolder, uniqueFileName);
                 using (var fileStream = new FileStream(filePath, FileMode.Create))
                 {
-                    await file.CopyToAsync(fileStream);
+                    file.CopyToAsync(fileStream);
                 }
                 // Retorna el nombre del folder en donde se guardo la imagen exactamente en el api y este se acomoda en el front para verlo
                 string folderPath = filePath.Substring(_hostEnvironment.WebRootPath.Length).Replace('\\', '/');
@@ -104,7 +104,7 @@ public class UploadFiles : IUploadFiles
         
     }
 
-    public Task<string> DeleteImageSelect(string imageName)
+    public string DeleteImageSelect(string imageName)
     {
         try
         {
@@ -113,14 +113,19 @@ public class UploadFiles : IUploadFiles
             if (File.Exists(imagePath))
             {
                 File.Delete(imagePath);
-                return Task.FromResult("Image deleted successfully");
+                return "Image deleted successfully";
             }
 
-            return Task.FromResult("Image not found");
+            return "Image not found";
         }
         catch (Exception ex)
         {
-            return Task.FromResult(ex.Message);
+            return ex.Message;
         }
+    }
+
+    Task<string> IUploadFiles.DeleteImageSelect(string imageName)
+    {
+        throw new NotImplementedException();
     }
 }
