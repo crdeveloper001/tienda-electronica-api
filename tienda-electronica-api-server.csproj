@@ -7,7 +7,7 @@
     <UserSecretsId>f7259542-b26f-4d5b-9bc3-e1e10e07ab1a</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <DockerfileContext>.</DockerfileContext>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
