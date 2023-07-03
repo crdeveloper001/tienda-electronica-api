@@ -1,17 +1,30 @@
 ﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{BEA22881-C8B6-4DE0-A0C8-BF4FD61BE5F9}|Default">
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Services/UploadFiles.cs">
+    <Files>
+      <File FileName="Controllers/FilesUploadController.cs" Line="26" Column="29" />
+      <File FileName="Services/UploadFiles.cs" Line="15" Column="64" />
+      <File FileName="Interfaces/IUploadFiles.cs" Line="5" Column="30" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="tienda-electronica-api-server">
             <Node name="tienda-electronica-api-server">
-              <Node name="Dependencies" expanded="True">
-                <Node name="PackageDependencies" expanded="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="Interfaces" expanded="True" />
+              <Node name="Services" expanded="True" />
+              <Node name="wwwroot" expanded="True">
+                <Node name="Resources" expanded="True">
+                  <Node name="ProfilesImages" expanded="True" />
+                </Node>
               </Node>
             </Node>
           </Node>
         </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>

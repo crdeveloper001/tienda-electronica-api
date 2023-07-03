@@ -562,15 +562,15 @@ C:/Users/004007659/Desktop/PROYECTOS PERSONALES/Tienda Electronica v1/tienda-ele
 /home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/TIENDA ELECTRONICA/tienda-electronica-api/obj/Debug/net6.0/tienda-electronica-api-server.pdb
 /home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/TIENDA ELECTRONICA/tienda-electronica-api/obj/Debug/net6.0/tienda-electronica-api-server.genruntimeconfig.cache
 /home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/TIENDA ELECTRONICA/tienda-electronica-api/obj/Debug/net6.0/ref/tienda-electronica-api-server.dll
-/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/tienda-electronica-api/obj/Debug/net6.0/tienda-electronica-api-server.csproj.AssemblyReference.cache
-/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/tienda-electronica-api/obj/Debug/net6.0/tienda-electronica-api-server.GeneratedMSBuildEditorConfig.editorconfig
-/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/tienda-electronica-api/obj/Debug/net6.0/tienda-electronica-api-server.AssemblyInfoInputs.cache
-/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/tienda-electronica-api/obj/Debug/net6.0/tienda-electronica-api-server.AssemblyInfo.cs
-/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/tienda-electronica-api/obj/Debug/net6.0/tienda-electronica-api-server.csproj.CoreCompileInputs.cache
-/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/tienda-electronica-api/obj/Debug/net6.0/tienda-electronica-api-server.MvcApplicationPartsAssemblyInfo.cs
-/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/tienda-electronica-api/obj/Debug/net6.0/tienda-electronica-api-server.MvcApplicationPartsAssemblyInfo.cache
+/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/TIENDA ELECTRONICA/tienda-electronica-api/obj/Debug/net6.0/staticwebassets/msbuild.tienda-electronica-api-server.Microsoft.AspNetCore.StaticWebAssets.props
+/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/TIENDA ELECTRONICA/tienda-electronica-api/obj/Debug/net6.0/staticwebassets/msbuild.build.tienda-electronica-api-server.props
+/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/TIENDA ELECTRONICA/tienda-electronica-api/obj/Debug/net6.0/staticwebassets/msbuild.buildMultiTargeting.tienda-electronica-api-server.props
+/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/TIENDA ELECTRONICA/tienda-electronica-api/obj/Debug/net6.0/staticwebassets/msbuild.buildTransitive.tienda-electronica-api-server.props
+/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/TIENDA ELECTRONICA/tienda-electronica-api/obj/Debug/net6.0/staticwebassets.pack.json
+/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/TIENDA ELECTRONICA/tienda-electronica-api/bin/Debug/net6.0/global.json
 /Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/tienda-electronica-api/bin/Debug/net6.0/appsettings.Development.json
 /Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/tienda-electronica-api/bin/Debug/net6.0/appsettings.json
+/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/tienda-electronica-api/bin/Debug/net6.0/global.json
 /Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/tienda-electronica-api/bin/Debug/net6.0/tienda-electronica-api-server.staticwebassets.runtime.json
 /Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/tienda-electronica-api/bin/Debug/net6.0/tienda-electronica-api-server
 /Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/tienda-electronica-api/bin/Debug/net6.0/tienda-electronica-api-server.deps.json
@@ -578,6 +578,7 @@ C:/Users/004007659/Desktop/PROYECTOS PERSONALES/Tienda Electronica v1/tienda-ele
 /Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/tienda-electronica-api/bin/Debug/net6.0/tienda-electronica-api-server.dll
 /Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/tienda-electronica-api/bin/Debug/net6.0/tienda-electronica-api-server.pdb
 /Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/tienda-electronica-api/bin/Debug/net6.0/AWSSDK.Core.dll
+/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/tienda-electronica-api/bin/Debug/net6.0/AWSSDK.Extensions.NETCore.Setup.dll
 /Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/tienda-electronica-api/bin/Debug/net6.0/AWSSDK.SecurityToken.dll
 /Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/tienda-electronica-api/bin/Debug/net6.0/DnsClient.dll
 /Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/tienda-electronica-api/bin/Debug/net6.0/Faker.Net.6.0.dll
@@ -819,6 +820,13 @@ C:/Users/004007659/Desktop/PROYECTOS PERSONALES/Tienda Electronica v1/tienda-ele
 /Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/tienda-electronica-api/bin/Debug/net6.0/runtimes/win/lib/net6.0/System.Drawing.Common.dll
 /Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/tienda-electronica-api/bin/Debug/net6.0/runtimes/win/lib/net6.0/System.Security.Cryptography.ProtectedData.dll
 /Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/tienda-electronica-api/bin/Debug/net6.0/runtimes/win/lib/net6.0/System.Windows.Extensions.dll
+/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/tienda-electronica-api/obj/Debug/net6.0/tienda-electronica-api-server.csproj.AssemblyReference.cache
+/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/tienda-electronica-api/obj/Debug/net6.0/tienda-electronica-api-server.GeneratedMSBuildEditorConfig.editorconfig
+/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/tienda-electronica-api/obj/Debug/net6.0/tienda-electronica-api-server.AssemblyInfoInputs.cache
+/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/tienda-electronica-api/obj/Debug/net6.0/tienda-electronica-api-server.AssemblyInfo.cs
+/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/tienda-electronica-api/obj/Debug/net6.0/tienda-electronica-api-server.csproj.CoreCompileInputs.cache
+/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/tienda-electronica-api/obj/Debug/net6.0/tienda-electronica-api-server.MvcApplicationPartsAssemblyInfo.cs
+/Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/tienda-electronica-api/obj/Debug/net6.0/tienda-electronica-api-server.MvcApplicationPartsAssemblyInfo.cache
 /Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/tienda-electronica-api/obj/Debug/net6.0/staticwebassets/msbuild.tienda-electronica-api-server.Microsoft.AspNetCore.StaticWebAssets.props
 /Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/tienda-electronica-api/obj/Debug/net6.0/staticwebassets/msbuild.build.tienda-electronica-api-server.props
 /Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/tienda-electronica-api/obj/Debug/net6.0/staticwebassets/msbuild.buildMultiTargeting.tienda-electronica-api-server.props
@@ -833,9 +841,3 @@ C:/Users/004007659/Desktop/PROYECTOS PERSONALES/Tienda Electronica v1/tienda-ele
 /Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/tienda-electronica-api/obj/Debug/net6.0/tienda-electronica-api-server.pdb
 /Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/tienda-electronica-api/obj/Debug/net6.0/tienda-electronica-api-server.genruntimeconfig.cache
 /Users/claudiogonzalezhernandez/Desktop/PROYECTOS PERSONALES/tienda-electronica-api/obj/Debug/net6.0/ref/tienda-electronica-api-server.dll
-/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/TIENDA ELECTRONICA/tienda-electronica-api/obj/Debug/net6.0/staticwebassets/msbuild.tienda-electronica-api-server.Microsoft.AspNetCore.StaticWebAssets.props
-/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/TIENDA ELECTRONICA/tienda-electronica-api/obj/Debug/net6.0/staticwebassets/msbuild.build.tienda-electronica-api-server.props
-/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/TIENDA ELECTRONICA/tienda-electronica-api/obj/Debug/net6.0/staticwebassets/msbuild.buildMultiTargeting.tienda-electronica-api-server.props
-/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/TIENDA ELECTRONICA/tienda-electronica-api/obj/Debug/net6.0/staticwebassets/msbuild.buildTransitive.tienda-electronica-api-server.props
-/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/TIENDA ELECTRONICA/tienda-electronica-api/obj/Debug/net6.0/staticwebassets.pack.json
-/home/claudio/Desktop/PROYECTOS PERSONALES FULLSTACK/TIENDA ELECTRONICA/tienda-electronica-api/bin/Debug/net6.0/global.json
